@@ -4,7 +4,6 @@ package xyz.easyboot.factory.simple;
  *
  * 简单工厂
  *
- * https://www.javazhiyin.com/41806.html
  *
  * 客户端
  *
@@ -15,9 +14,11 @@ package xyz.easyboot.factory.simple;
 public class Main {
 
     public static void main(String[] args) {
+        // 从店里买鱼
         IFood fishFood = FoodFactory.getFood(FoodType.FISH);
         fishFood.showFood();
 
+        // 从店里买米
         IFood riceFood = FoodFactory.getFood(FoodType.RICE);
         riceFood.showFood();
     }
